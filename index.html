@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    اعد<title>اتحاد تانفاليت لجمعيات أوكنز - الصفحة الرسمية</title>
+
+    <meta name="description" content="الموقع الرسمي لاتحاد تانفاليت لجمعيات أوكنز، يعنى بالتنمية المجالية، التدريب، وتنشيط الفعاليات الثقافية والاجتماعية بالمنطقة.">
+    <meta name="keywords" content="اتحاد تانفاليت, جمعيات أوكنز, تنمية أوكنز, الموكار أوكنز, العمل الجمعوي">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتحاد تانفاليت لجمعيات أوكنز</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .main-footer {
+    background-color: #0d4a6b; /* نفس لون الشريط العلوي في موقعك */
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+    direction: rtl;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #f9f9f9;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.bank-account {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        /* شريط المعلومات */
+        .top-info {
+            background-color: #093a54;
+            color: white;
+            padding: 8px 50px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        /* الهيدر */
+        header {
+            background: linear-gradient(135deg, #1a7196 0%, #0d4a6b 100%);
+            color: white;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-section { display: flex; align-items: center; gap: 15px; }
+        .logo-img { height: 60px; width: 60px; border-radius: 50%; background: white; object-fit: contain; }
+
+        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+        /* --- قسم المقدمة مع خلفية صورة --- */
+        .hero-section {
+            position: relative;
+            height: 100vh; /* يأخذ طول الشاشة كاملاً */
+            /* استبدل background-bg.jpg باسم صورتك المرفوعة */
+            background: url('laarbi-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* طبقة تغميق الصورة ليكون النص واضحاً */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* طبقة سوداء شفافة */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.1); /* تأثير زجاجي */
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            margin: 0 20px;
+        }
+
+        .hero-content h1 { font-size: 3rem; margin-bottom: 20px; color: #fff; }
+        .hero-content p { font-size: 1.4rem; line-height: 1.8; color: #eee; }
+
+        /* تنسيق أقسام الخدمات الأخرى */
+        .services-section { padding: 80px 50px; text-align: center; background: #fff; }
+        .service-container { display: flex; align-items: center; max-width: 1100px; margin: 0 auto; gap: 50px; }
+        .reverse { flex-direction: row-reverse; }
+        .service-text { flex: 1; }
+        .service-image { flex: 1; }
+        .service-image img { width: 100%; max-width: 450px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        @media (max-width: 768px) {
+            .service-container { flex-direction: column; }
+            header { padding: 10px 20px; height: auto; flex-direction: column; }
+            .hero-content h1 { font-size: 2rem; }
+        }
+        /* هذا الكلاس يعكس ترتيب العناصر داخل الحاوية */
+         .reverse {
+           flex-direction: row-reverse;
+}
+    </style>
+</head>
+<body>
+
+    <div class="top-info">
+        <div>union.tanfalit@gmail.com | 0666438411</div>
+        <div>اتصل بنا</div>
+    </div>
+
+    <header>
+        <a href="https://www.facebook.com/share/18cRXv98Pj/" style="border:1px solid #fff; padding:5px 15px; color:#fff; text-decoration:none; border-radius:5px;" target="_blank">فيسبوك</a>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+            </ul>
+        </nav>
+        <div class="logo-section">
+            <span style="font-weight: bold;">اتحاد تانفاليت لجمعيات أوكنز</span>
+            <img src="laarbi-bg.jpg" alt="Logo" class="logo-img">
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>اتحاد تانفاليت لجمعيات اوكنز </h1>
+            <p>
+                نحن اتحاد يجمع جمعيات منطقة أوكنز، نهدف إلى توحيد الجهود من أجل تنمية الساكنة المحلية وتطوير البنيات التحتية والخدمات الاجتماعية. نعمل بروح الفريق لتعزيز التضامن وتسهيل سبل الحياة والتعليم لجميع أبناء المنطقة.
+            </p>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service-container">
+            <div class="service-text">
+                <h2 style="color:#1a7196; font-size: 2.2em;">النقل المدرسي</h2>
+                <p style="font-size: 1.2em; color: #666;">نسعى لتأمين وصول أبنائنا وبناتنا إلى مقاعد الدراسة بأمان عبر أسطول نقل مدرسي متطور يغطي مختلف الدواوير.</p>
+            </div>
+            <div class="service-image">
+                <img src="bus.jpeg" alt="النقل المدرسي">
+            </div>
+        </div>
+    </section class="services-section">
+        <div class="service-container">
+            <div class="service-text">
+                <h1>ترافع عن مصالح الساكنة</h1>
+                <p>
+                    يقوم الاتحاد بالترافع عن حقوق الساكنة المحلية ويسعى جاهداً لتحقيق مطالبهم المشروعة في مختلف المجالات التنموية والاجتماعية أمام الجهات المختصة.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="service.jpeg" alt="الترافع عن مصالح الساكنة">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service-container reverse"> <div class="service-text">
+                <h2>مساعدات اجتماعية</h2>
+                <p>
+                    نقدم مجموعة متنوعة من المساعدات الاجتماعية والمبادرات التضامنية لدعم الأسر المعوزة والمحتاجين في المنطقة، بهدف تحسين ظروفهم المعيشية وتكريس قيم التكافل.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="mosa3adat.jpeg" alt="المساعدات الاجتماعية">
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="service-container">
+            <div class="service-text">
+                <h2>توزيع الكتب لصالح التلاميذ</h2>
+                <p>
+                    نقوم بتوفير المقررات والكتب الدراسية لدعم تلاميذ المنطقة، مساهمة منا في تشجيع التمدرس ومحاربة الهدر المدرسي في صفوف الناشئة.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="book.jpeg" alt="توزيع الكتب">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service-container reverse"> <div class="service-text">
+                <h2>تقديم الاستشارات</h2>
+                <p>
+                    يقدم الاتحاد استشارات مهنية ودعماً تقنياً للجمعيات في مجالات التخطيط والتنظيم والإدارة، لضمان نجاح مبادراتهم وتحقيق أهدافهم التنموية بكفاءة.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="fa3alyt.jpeg" alt="تقديم الاستشارات">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service-container">
+            <div class="service-text">
+                <h2>تنظيم الفعاليات</h2>
+                <p>
+                    نعمل على تنظيم اللقاءات والفعاليات المجتمعية التي تهدف إلى تعزيز التواصل بين الأفراد والجمعيات، مما يساهم في بناء مجتمع محلي متماسك ومتعاون.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="almogar.jpeg" alt="تنظيم الفعاليات">
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="service-container reverse"> 
+            <div class="service-text">
+                <h2>توفير التدريب</h2>
+                <p>
+                    يقدم الاتحاد برامج تدريبية متخصصة لتعزيز مهارات الأفراد العاملين في الجمعيات وتمكينهم من أداء مهامهم بكفاءة عالية، مما يساهم في تطوير العمل الجمعوي بالمنطقة.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="tadarib.jpeg" alt="توفير التدريب للجمعيات">
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>تواصل معنا</h3>
+            <p><i class="fas fa-envelope"></i> union.tanfalit@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 0666438411</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>المقر اوكنز </h3>
+           <p>جماعة اوكنز - قيادة  تنالت - اقليم شتوكة ايت باها </p>
+            <div class="bank-account">
+                <strong>350 810 0000000010810542 12</strong>
+           <p> وكالة البريد بنك</p>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>اتحاد تانفاليت لجمعيات اوكنز </h3>
+            <p>نعمل معاً من أجل تنمية مستدامة للمنطقة وتعزيز روح التضامن المجتمعي.</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 جميع الحقوق محفوظة - اتحاد تانفاليت لجمعيات أوكنز</p>
+    </div>
+</footer>
+</body>
+</html>
